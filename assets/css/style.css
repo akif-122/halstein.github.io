@@ -1,0 +1,1131 @@
+	/*MONTSERRAT FONT	*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*	MERCELLUS	*/
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition:all 0.3s ease-out;
+}
+
+a,a:hover{
+	text-decoration: none;
+}
+
+html{
+	font-size: 62.5%;
+	
+
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100vh;
+
+}
+input,select,textarea{
+	outline: none !important;
+}
+
+
+/*
+=======================================
+	SIDE BAR INFO START
+=======================================
+*/
+#sidebar{
+	position: fixed;
+	top: 0;
+	right: -100%;
+	width: 500px;
+	height: 100vh;
+	padding: 50px;
+	padding-bottom: 100px;
+	background: url(../img/sidearea-img-01.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 100;
+}
+
+#sidebar .sideCLose span{
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+	margin-bottom: 40px;
+}
+
+#sidebar .footer-about p{
+	font-size: 14px;
+	color: #fff;
+	margin: 30px 0;
+	line-height: 1.8;
+	letter-spacing: 2px;
+	font-family: Montserrat;
+	font-weight: 300;
+}
+#sidebar .sideinfo-contact{
+	position: absolute;
+	bottom: 80px;
+}
+
+#sidebar .sideinfo-contact  p{
+	font-size: 16px;
+	color: #fff;
+	font-family: Montserrat;	
+	font-weight: 300;
+}
+#sidebar .sideinfo-contact  p a{
+	margin-left: 4px;
+	color: #fff;
+
+}
+#sidebar .sideinfo-contact  p a:hover{
+	opacity: 0.5;
+}
+/*
+=======================================
+	SIDE BAR INFO END
+=======================================
+*/
+
+/*
+========================================
+	MENU SECTION START
+========================================
+*/
+.menu-header{
+	background: #fff;
+}
+.menu-header .logo{
+	border-right: 1px solid #777;
+	padding: 20px;
+	padding-bottom: 10px;
+}
+.menu-header .logo img{
+	width: 280px;
+}
+.menu-header .menu-header-right .top-detail{
+	border-bottom: 1px solid #777;
+	padding-left: 40px;
+}
+.menu-header .menu-header-right .top-detail ul{
+	list-style: none;
+	margin: 0;
+}
+
+.menu-header .menu-header-right .top-detail ul li{
+	margin: 5px 20px;
+}
+
+.menu-header .menu-header-right .top-detail ul li a,
+.menu-header .menu-header-right .top-detail ul li{
+	font-size: 13px;
+	color: #666;
+}
+
+.menu-header .menu-header-right .lang select{
+	margin: 0px 10px;
+	margin-right: 20px;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	color: #666;
+}
+.menu-header .menu-header-right .mynav{
+	padding-left: 40px ;
+	padding-right: 40px ;
+	z-index: 10;
+}
+.menu-header .menu-header-right .mynav ul{
+	list-style: none;
+	margin: 0;
+}
+.menu-header .menu-header-right .mynav ul > li{
+	margin: 0px 40px;
+	padding-left: 0px;
+	position: relative;
+}
+.menu-header .menu-header-right .mynav ul > li:before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -40px;
+	width: 0px;
+	height: 1px;
+	background: #000;
+	transition: width .3s ease-out;
+
+}
+.menu-header .menu-header-right .mynav ul > li.active:before,
+.menu-header .menu-header-right .mynav ul > li:hover:before{
+	width: 30px;
+}
+.menu-header .menu-header-right .mynav ul > li a{
+	display: inline-block;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 30px 0;
+	color: #000;
+	font-weight: 500;
+
+
+
+}
+.menu-header .menu-header-right .mynav ul > li.dropDown{
+	position: relative;
+}
+
+
+
+.menu-header .menu-header-right .mynav ul > li.dropDown  .dropdownMenu{
+	width: 300px;
+	padding: 10px 0;
+	position: absolute;
+	top: -100%;
+	left: -40px;
+	background: #fff;
+	z-index: 10;
+	box-shadow: 0 0 25px -20px grey;
+	overflow: hidden;
+	transition:all  0.3s ease-out;
+	opacity: 0;
+	z-index: -5;
+	pointer-events: none;
+
+}
+.menu-header .menu-header-right .mynav ul > li.dropDown:hover .dropdownMenu{
+	top: 100%;
+	opacity: 1;
+	pointer-events: auto;
+	transition: all 0.3s ease-out;
+
+
+
+}
+.menu-header .menu-header-right .mynav ul > li.dropDown .dropdownMenu ul{
+	overflow: hidden;
+}
+.menu-header .menu-header-right .mynav ul > li.dropDown .dropdownMenu ul li:before{
+	left: -25px;
+	background: #b29063;
+}
+.menu-header .menu-header-right .mynav ul > li.dropDown .dropdownMenu ul li.active,
+.menu-header .menu-header-right .mynav ul > li.dropDown .dropdownMenu ul li:hover{
+	margin-left: 50px;
+}
+.menu-header .menu-header-right .mynav ul > li.dropDown .dropdownMenu ul li{
+	margin: 5px 0;
+	padding: 0;
+}
+.menu-header .menu-header-right .mynav ul > li.dropDown .dropdownMenu ul li a{
+	padding: 0 20px ;
+	display: block;
+	letter-spacing: 3px;
+	color: #b29063;
+}
+
+
+.menu-header .menu-header-right .info-btn{
+	border-left: 1px solid #333;
+	padding: 10px 10px; 
+	height: 100px;
+	display: flex;
+	align-items: center;
+}
+.menu-header .menu-header-right .info-btn button{
+	padding: 0px 10px;
+	background: transparent;
+	color: #000;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	border: none;
+
+	
+}
+.menu-header .menu-header-right .info-btn button svg{
+	width: 30px;
+	padding: 0;
+	margin-left: 9px;
+}
+/*
+========================================
+	MENU SECTION END
+========================================
+*/
+
+
+/*
+========================================
+	HERO SECTION START
+========================================
+*/
+.hero-section{
+	margin-bottom: 00px;
+	position: relative;
+}
+.hero-section .hero-slide{
+	position: relative;
+}
+.hero-section .hero-slide > img{
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+}
+
+.hero-section .hero-slide .hero-slide-text{
+	position: absolute;
+	bottom: 15%;
+	left: 10%;
+}
+.hero-section .hero-slide .hero-slide-text h6{
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: 4px;
+	margin: 15px 0;
+	text-shadow: 0 0 3px grey;
+}
+.hero-section .hero-slide .hero-slide-text h1{
+	font-size: 70px;
+	color: #fff;
+	font-weight: 600;
+	margin: 20px 0;
+	font-family: 'Marcellus', serif;
+	text-shadow: 0 0 3px grey;
+
+}
+
+.hero-section .hero-slide .hero-slide-text a{
+	display: inline-block;
+	font-size: 14px;
+	color: #fff;
+	font-weight: 500;
+	border: 1px solid #fff;
+	padding: 16px 80px;
+}
+.hero-section .hero-slide .hero-slide-text a:hover{
+	color: #777;
+	background: #fff;
+}
+
+.hero-section .hero-slide-arrow:after{
+	font-size: 26px !important;
+	color: rgba(255,255,255,0.7);
+}
+.hero-section .hero-slide-arrow{
+	position: absolute;
+	right: 5%;
+	top: 500px;
+	font-size: 13px;
+	padding: 0 10px;
+}
+
+.hero-section .hero-slide-arrow.swiper-button-prev{
+	left: 88%;
+	padding-right: 10px;
+}
+.hero-section .hero-slide-arrow.swiper-button-prev:after{
+	border-right: 1px solid #fff;
+	padding: 5px 10px;
+}
+.hero-section .hero-slide-arrow.swiper-button-next:after{
+	border-left: 1px solid #fff;
+	padding: 5px 10px;
+
+}
+/*
+========================================
+	HERO SECTION END
+========================================
+*/
+
+
+/*
+========================================
+	STRATEGY SECTION START
+========================================
+*/
+.strategy-section .ceo-content{
+	width: 100%;
+	padding: 150px 10px;
+	position: relative;
+}
+.strategy-section .ceo-content:before{
+	content: "";
+	position: absolute;
+	left: 13%;
+	top: 0;
+	height: 300px;
+	width: 1px;
+	background: #7777;
+
+}
+.strategy-section .ceo-content .ceo-text{
+	max-width: 750px;
+	margin: 0 auto;
+
+
+}
+.strategy-section .ceo-content .ceo-text h2{
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.227em;
+    font-family: Marcellus,serif;
+    color: var(--qode-main-color);
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.strategy-section .ceo-content .ceo-text h2 span{
+	color: #b29063;
+}
+.strategy-section .ceo-content .ceo-text h5{
+	font-weight: 500;
+    font-size: 11px;
+    line-height: 1.6em;
+    letter-spacing: .6em;
+    text-transform: uppercase;
+    font-family: Montserrat,sans-serif;
+    color: #b29063;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    margin-top: 50px;
+}
+
+.strategy-section .strategy-card{
+	position: relative;
+	overflow: hidden;
+}
+.strategy-section .strategy-card img{
+	transform: scale(1.05);
+	transition: 0.5s ease-out;
+}
+.strategy-section .strategy-card:hover img{
+	transform: scale(1.05) translateX(6px);
+
+}
+.strategy-section .strategy-card .strategy-content{
+	width: 100%;
+	padding: 0 20px;
+	position: absolute;
+	bottom: 15%;
+	left: 0%;
+}
+.strategy-section .strategy-card .strategy-content h4{
+	font-weight: 400;
+    font-size: 28px;
+    line-height: 1.285em;
+    font-family: Marcellus,serif;
+    margin: 25px 0;
+    margin-right: 20px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    color: #fff;
+}
+.strategy-section .strategy-card .strategy-content > span{
+	color: rgba(255,255,255,0.7);
+	font-size: 60px;
+	line-height: 1;
+	padding-left: 15px;
+	border-left: 1px solid #fff;
+	font-weight: 300;
+}
+/*
+========================================
+	STRATEGY SECTION END
+========================================
+*/
+
+
+/*
+========================================
+	NEWS SECTION START
+========================================
+*/
+.news-section{
+	padding-left: 260px;
+	margin: 150px 0;
+}
+.news-section .news-heading{
+	max-width: 680px;
+	padding-right: 80px
+}
+.news-section .news-heading h5{
+	font-weight: 500;
+    font-size: 11px;
+    line-height: 1.6em;
+    letter-spacing: .6em;
+    text-transform: uppercase;
+    font-family: Montserrat,sans-serif;
+    color: #b29063;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.news-section .news-heading h2{
+	font-weight: 400;
+    font-size: 44px;
+    line-height: 1.227em;
+    font-family: Marcellus,serif;
+    color: #666;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.news-section .news-slider-container{
+	margin: 40px 0;
+	padding-left: 00px;
+
+	overflow: hidden;
+}
+.news-section .news-slider-container .news-slide{
+	background: #FCF9F9;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.news-section .news-slider-container .news-slide .news-slide-content{
+	padding: 10px;
+	padding-left: 25px;
+}
+.news-section .news-slider-container .news-slide .news-slide-content h4{
+	font-weight: 400;
+    font-size: 28px;
+    line-height: 1.285em;
+    font-family: Marcellus,serif;
+    color: #666;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.news-section .news-slider-container .news-slide .news-slide-content > a span{
+	font-weight: 500;
+    font-size: 11px;
+    line-height: 1.6em;
+    letter-spacing: .6em;
+    text-transform: uppercase;
+    font-family: Montserrat,sans-serif;
+    color: #b29063;
+    
+
+}
+
+.news-section .news-slider-container .news-slide .news-slide-content > .read-btn {
+	margin: 20px 0;
+
+}
+.news-slide .news-slide-content > .read-btn a{
+	color: #666;
+	font-size: 14px;
+	font-weight: 500;
+    font-family: Montserrat,sans-serif;
+    display: flex;
+    align-items: center;
+}
+.news-slide .news-slide-content > .read-btn a i{
+	margin-left: 15px; 
+	padding-left: 5px;
+	border-left: 1px solid #555;
+	font-size: 26px;
+}
+/*
+========================================
+	NEWS SECTION END
+========================================
+*/
+
+
+/*
+========================================
+	VIDEO SECTION START
+========================================
+*/
+.video-section .video-thumb{
+	position: relative;
+	cursor: pointer;
+}
+.video-section .video-thumb > img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.video-section .video-thumb .play-btn{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+.video-section .video-thumb .play-btn i{
+	font-size: 26px;
+	color: #fff;
+
+}
+.video-content{
+	position: relative;
+}
+.video-content .video-text-container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background: rgba(17, 33, 59,0.97);
+	display: flex;
+	align-items: flex-end;
+	padding: 40px 60px;
+}
+.video-content .video-text-container h4{
+	font-weight: 400;
+    font-size: 28px;
+    line-height: 1.285em;
+    font-family: Marcellus,serif;
+    color: #fff;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+/*
+========================================
+	VIDEO SECTION END
+========================================
+*/
+
+
+/*
+========================================
+	QUOTATION SECTION START
+========================================
+*/
+.quotation{
+	margin: 100px 0;
+}
+.owl-carousel .owl-prev {
+    left: -35px;
+    position: absolute;
+    top: 20%;
+    border-right: 1px solid #7777;
+	line-height: 0px !important;
+	background: lime !important;
+	padding: 0 !important;
+	padding-right: 10px !important;
+}
+.owl-carousel .owl-next {
+  right: -35px;
+  position: absolute;
+  top: 20%;
+  border-left: 1px solid #7777;
+  line-height: 0px !important;
+  background: lime !important;
+  padding: 0 !important;
+  padding-left: 10px !important;
+
+
+}
+
+
+.owl-carousel .owl-next,
+.owl-carousel .owl-prev{
+	color: #666 !important;
+	background: transparent !important;
+	border-radius: 0 !important;
+	font-size: 60px !important;
+}
+.quotation .quote-icon i{
+	color: #b29063;
+	font-size: 70px;
+	display: inline-block;
+	margin: 40px 20px;
+}
+.quotation .quote-text{
+	width: 90%;
+	margin: 20px auto;
+}
+.quotation .quote-text h3{
+	font-weight: 400;
+    font-size: 34px;
+    line-height: 1.294em;
+    font-family: Marcellus,serif;
+    color: #333;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.quotation .quote-text h5{
+	font-weight: 500;
+    font-size: 11px;
+    line-height: 1.6em;
+    letter-spacing: .6em;
+    text-transform: uppercase;
+    font-family: Montserrat,sans-serif;
+    color: #b29063;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.quotation .quote-text h5 span{
+	margin: 0 10px;
+}
+/*
+========================================
+	QUOTATION SECTION END
+========================================
+*/
+
+
+/*
+========================================
+	TEAM SECTION START
+========================================
+*/
+.team-section{
+	padding: 10px;
+}
+.team-section .team-card{
+	position: relative;
+	margin: 15px 0;
+}
+
+.team-section .team-card .team-content{
+	width: 100%;
+	position: absolute;
+	bottom: 5%;
+	left: 0;
+	padding: 0 40px ;
+}
+.team-section .team-card .team-content h3{
+	font-weight: 400;
+    font-size: 28px;
+    line-height: 1;
+    font-family: Marcellus,serif;
+    color: #fff;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.team-section .team-card .team-content h6{
+	 font-weight: 500;
+    font-size: 11px;
+    line-height: 1;
+    letter-spacing: .6em;
+    text-transform: uppercase;
+    font-family: Montserrat,sans-serif;
+    color: #fff;
+    margin: 0;
+}
+.team-section .team-card .team-content > a i{
+	font-size: 16px;
+	border-radius: 3px;
+	color: #333;
+	padding: 0 2px;
+	background: #fff;
+}
+.team-section .team-card .team-content > a:hover i{
+	background: #b29063;
+}
+/*
+========================================
+	TEAM SECTION END
+========================================
+*/
+
+
+/*
+========================================
+	DEAL SECTION START
+========================================
+*/
+.deal-section .deal-section-title{
+	margin: 70px 0;
+	max-width: 650px;
+	padding-right: 40px;
+}
+.contact-section-title h6,
+.deal-section .deal-section-title h6{
+	font-weight: 500;
+    font-size: 11px;
+    line-height: 1.6em;
+    letter-spacing: .6em;
+    text-transform: uppercase;
+    font-family: Montserrat,sans-serif;
+    color: #b29063;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.contact-section-title h2,
+.deal-section .deal-section-title h2{
+	font-weight: 400;
+    font-size: 44px;
+    line-height: 1.227em;
+    font-family: Marcellus,serif;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    color: #14203b;
+}
+.deal-section .deal-card{
+	background: #FCF9F9;
+	padding: 50px 75px;
+	margin: 15px 0;
+	position: relative;
+	overflow: hidden;
+}
+.deal-section .deal-card:after{
+	content: '';
+	position: absolute;
+	left: 35px;
+	top: 0;
+	width: 1px;
+	height: 60%;
+	background: #ded5c8;
+}
+
+.deal-section .deal-card.card1:after{
+	height: 75%
+}
+
+.deal-section .deal-card.card2:after{
+	height: 60%
+}
+.deal-section .deal-card.card3:after{
+	height: 75%
+}
+
+
+.deal-section .deal-card .deal-content h6{
+	font-weight: 500;
+    font-size: 11px;
+    line-height: 1.6em;
+    letter-spacing: .6em;
+    text-transform: uppercase;
+    font-family: Montserrat,sans-serif;
+    color: #b29063;
+    margin: 15px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.deal-section .deal-card .deal-content h3{
+	margin: 0;
+    font-family: Marcellus,serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    color: #14203b;
+}
+
+.deal-section .deal-card .deal-content .deal-list{
+	margin: 60px 0;
+}
+
+.deal-section .deal-card .deal-content .deal-list p {
+	margin: 16px 0;
+	font-size: 16px;
+	font-weight: 400;
+	color: #666;
+}
+.deal-section .deal-card .deal-content .deal-card-btn a{
+	display: flex;
+	align-items: center;
+	font-size: 14px; 
+	color: #666;
+}
+.deal-section .deal-card .deal-content .deal-card-btn a i{
+	margin-left: 8px;
+	padding-left: 5px;
+	border-left: 1px solid #666;
+	font-size: 22px;
+}
+/*
+========================================
+	DEAL SECTION END
+========================================
+*/
+/*
+========================================
+	OFFICE SECTION START
+========================================
+*/
+
+.office-section{
+	margin: 70px 0;
+}
+
+.office-section .office-content{
+	position: relative;
+}
+
+.office-section .office-content .office-text{
+	width: 100%;
+
+	position: absolute;
+	bottom: 20px;
+	left: 00px;
+	padding: 10px 50px;
+
+}
+.office-content .office-text > h3{
+	font-weight: 400;
+    font-size: 34px;
+    line-height: 1.294em;
+    font-family: Marcellus,serif;
+    color: #fff;
+    margin: 15px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.office-content .office-text .office-location h4{
+	font-weight: 400;
+    font-size: 28px;
+    line-height: 1.285em;
+    font-family: Marcellus,serif;
+    color: #fff;
+    margin: 15px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.office-content .office-text .office-location a{
+	font-size: 16px;
+	color: #fff;
+	margin: 10px 0;
+	display: block;
+}
+.office-content .office-text .office-location a:hover{
+	opacity: 0.7;
+}
+/*
+========================================
+	OFFICE SECTION END
+========================================
+*/
+
+
+/*
+========================================
+	CONTACT SECTION START
+========================================
+*/
+.contact-section{
+	padding: 50px 150px;
+}
+
+.contact-section .contact-form{
+	margin-top: 50px;
+}
+.contact-section .contact-form .form-group{
+	margin: 20px 0;
+}
+.contact-section .contact-form .form-group select,
+.contact-section .contact-form .form-group input,
+.contact-section .contact-form .form-group textarea{
+	border: none;
+	border-bottom: 1px solid #8888;
+	border-radius: 0;
+	font-size: 17px;
+	color: #666;
+	padding: 5px;
+	margin: 25px 0;
+
+}
+
+.contact-section .contact-form .form-group.chkbox{
+	display: flex;
+	align-items: center;
+}
+.contact-section .contact-form .form-group.chkbox label{
+	font-size: 15px;
+	margin: 0;
+	margin-left: 8px;
+	color: #777;
+}
+.contact-section .contact-form .contact-btn  input{
+    font-family: Montserrat,sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px 55px;
+    cursor: pointer;
+    color: #14203b;
+    background-color: #d4bfa3;
+    border: 1px solid #d4bfa3;
+}
+.contact-section .contact-form .contact-btn  input:hover{
+	background: transparent;
+}
+/*
+========================================
+	CONTACT SECTION END
+========================================
+*/
+
+
+/*
+========================================
+	FOOTER SECTION START
+========================================
+*/
+.footer-section{
+	margin-top: 100px;
+	background: url("../img/footer-bg.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.footer-section .footer-content{
+	padding: 150px 150px;
+}
+.footer-section .footer-content .footer-about p{
+	font-size: 16px;
+	color: #fff;
+	opacity: 0.7;
+	margin: 20px 0;
+}
+#sidebar .footer-about  a,
+.footer-section .footer-content .footer-about .footer-about-link a{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #14203b;
+	margin: 10px;
+	background: #d4bfa3;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 500;
+	border: 1px solid #d4bfa3;
+	transition:all 0.4s ease;
+}
+
+#sidebar .footer-about  a:hover,
+.footer-section .footer-content .footer-about .footer-about-link a:hover{
+	color: #d4bfa3;
+	background: transparent;
+}
+.footer-section .footer-content .footer-link{
+	margin: 10px 0;
+}
+.footer-section .footer-content .footer-link h4{
+	font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4em;
+    font-family: Marcellus,serif;
+    color: #fff;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.footer-section .footer-content .footer-link ul{
+	list-style: none;
+}
+.footer-section .footer-content .footer-link ul li a{
+	font-size: 14px;
+	color: #fff; 
+	opacity: 0.7;
+	display: inline-block;
+	margin: 8px 0;
+}
+.footer-section .footer-content .footer-link ul li a:hover{
+	opacity: 1;
+}
+.footer-section .footer-content .footer-link form .footer-input-wrap{
+	position: relative;
+}
+.footer-section .footer-content .footer-link form .footer-input-wrap span{
+	display: block;
+	color: #fff;
+	opacity: 0.7;
+	font-size: 16px;
+	margin-top: 4px;
+
+}
+.footer-section .footer-content .footer-link form .footer-input-wrap button{
+	position: absolute;
+	right: 8px;
+	top: 40%;
+	transform: translateY(-60%);
+	background: transparent;
+	font-size: 22px;
+	background: transparent;
+	border: none;
+	color: #fff;
+	opacity: 0.7;
+	padding-left: 5px;
+}
+.footer-section .footer-content .footer-link form .footer-input-wrap button:before{
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 20px;
+	background: #fff;
+	left: -4px;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 0.8;
+
+}
+.footer-section .footer-content .footer-link form .footer-input-wrap input{
+	width: 100%;
+	padding: 5px;
+	height: 40px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	border-radius: 0;
+	font-size: 15px;
+	color: #fff;
+	background: transparent;
+	opacity: 0.8;
+}
+
+.footer-section .footer-bottom{
+	padding: 20px 150px;
+	border-top: 1px solid rgba(255,255,255,0.3);
+}
+.footer-section .footer-bottom p{
+	font-size: 13px;
+	color: #fff;
+	opacity: 0.7;
+}
+.footer-section .footer-bottom ul li{
+	list-style: none;
+	margin: 5px 0px;
+}
+.footer-section .footer-bottom ul li a{
+	font-size: 13px;
+	color: #fff;
+	opacity: 0.7;
+	border-right: 1px solid #fff;
+	padding: 0 8px;
+}
+
+.footer-section .footer-bottom ul li:last-child a{
+	border: none;
+
+}
+
+/*
+========================================
+	FOOTER SECTION END
+========================================

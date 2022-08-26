@@ -1,0 +1,1062 @@
+
+@media screen and (max-width: 1199px){
+
+/*
+========================================
+	MENU SECTION START
+========================================
+*/
+.menu-header{
+	background: #fff;
+}
+.menu-header .logo{
+	border-right: 1px solid #777;
+	padding: 20px;
+	padding-bottom: 10px;
+}
+.menu-header .logo img{
+	width: 250px;
+}
+.menu-header .menu-header-right .top-detail{
+	border-bottom: 1px solid #777;
+	padding-left: 40px;
+}
+.menu-header .menu-header-right .top-detail ul{
+	list-style: none;
+	margin: 0;
+}
+
+.menu-header .menu-header-right .top-detail ul li{
+	margin: 5px 20px;
+}
+
+.menu-header .menu-header-right .top-detail ul li a,
+.menu-header .menu-header-right .top-detail ul li{
+	font-size: 13px;
+	color: #666;
+}
+
+.menu-header .menu-header-right .lang select{
+	margin: 0px 10px;
+	margin-right: 20px;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	color: #666;
+}
+.menu-header .menu-header-right .mynav{
+	padding-left: 40px ;
+	padding-right: 40px ;
+	z-index: 10;
+}
+.menu-header .menu-header-right .mynav ul{
+	list-style: none;
+	margin: 0;
+}
+.menu-header .menu-header-right .mynav ul > li{
+	margin: 0px 40px;
+	padding-left: 0px;
+	position: relative;
+}
+.menu-header .menu-header-right .mynav ul > li:before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -40px;
+	width: 0px;
+	height: 1px;
+	background: #000;
+	transition: width .3s ease-out;
+
+}
+.menu-header .menu-header-right .mynav ul > li.active:before,
+.menu-header .menu-header-right .mynav ul > li:hover:before{
+	width: 30px;
+}
+.menu-header .menu-header-right .mynav ul > li a{
+	display: inline-block;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 30px 0;
+	color: #000;
+	font-weight: 500;
+
+
+
+}
+.menu-header .menu-header-right .mynav ul > li.dropDown{
+	position: relative;
+}
+
+
+
+.menu-header .menu-header-right .mynav ul > li.dropDown  .dropdownMenu{
+	width: 300px;
+	padding: 10px 0;
+	position: absolute;
+	top: -100%;
+	left: -40px;
+	background: #fff;
+	z-index: 10;
+	box-shadow: 0 0 25px -20px grey;
+	overflow: hidden;
+	transition:all  0.3s ease-out;
+	opacity: 0;
+	z-index: -5;
+
+}
+.menu-header .menu-header-right .mynav ul > li.dropDown:hover .dropdownMenu{
+	top: 100%;
+	opacity: 1;
+	transition: all 0.3s ease-out;
+
+
+
+}
+.menu-header .menu-header-right .mynav ul > li.dropDown .dropdownMenu ul{
+	overflow: hidden;
+}
+.menu-header .menu-header-right .mynav ul > li.dropDown .dropdownMenu ul li:before{
+	left: -25px;
+	background: #b29063;
+}
+.menu-header .menu-header-right .mynav ul > li.dropDown .dropdownMenu ul li.active,
+.menu-header .menu-header-right .mynav ul > li.dropDown .dropdownMenu ul li:hover{
+	margin-left: 50px;
+}
+.menu-header .menu-header-right .mynav ul > li.dropDown .dropdownMenu ul li{
+	margin: 5px 0;
+	padding: 0;
+}
+.menu-header .menu-header-right .mynav ul > li.dropDown .dropdownMenu ul li a{
+	padding: 0 20px ;
+	display: block;
+	letter-spacing: 3px;
+	color: #b29063;
+}
+
+
+.menu-header .menu-header-right .info-btn{
+	border-left: 1px solid #333;
+	padding: 10px 20px; 
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+.menu-header .menu-header-right .info-btn button{
+	padding: 0px 10px;
+	background: transparent;
+	color: #000;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	border: none;
+
+	
+}
+.menu-header .menu-header-right .info-btn button i{
+
+	font-size: 30px;
+	height: auto;
+	padding: 0;
+	margin-left: 5px;
+}
+/*
+========================================
+	MENU SECTION END
+========================================
+*/
+
+/*
+========================================
+	HERO SECTION START
+========================================
+*/
+
+.hero-section .hero-slide > img{
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
+
+
+
+.hero-section .hero-slide-arrow{
+
+	top: 400px;
+}
+
+/*
+========================================
+	HERO SECTION END
+========================================
+*/
+
+
+
+/*
+========================================
+	STRATEGY SECTION START
+========================================
+*/
+
+.strategy-section .ceo-content:before{
+	left: 7%;
+	
+
+}
+/*
+========================================
+	STRATEGY SECTION END
+========================================
+*/
+
+/*
+========================================
+	NEWS SECTION START
+========================================
+*/
+.news-section{
+	padding-left: 100px;
+	margin: 150px 0;
+}
+
+.news-section .news-heading h5{
+	font-weight: 500;
+    font-size: 11px;
+    line-height: 1.6em;
+    letter-spacing: .6em;
+    text-transform: uppercase;
+    font-family: Montserrat,sans-serif;
+    color: #b29063;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.news-section .news-heading h2{
+	font-weight: 400;
+    font-size: 44px;
+    line-height: 1.227em;
+    font-family: Marcellus,serif;
+    color: #666;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.news-section .news-slider-container{
+	margin: 40px 0;
+	padding-left: 260px;
+	overflow: hidden;
+}
+.news-section .news-slider-container .news-slide{
+	background: #FCF9F9;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.news-section .news-slider-container .news-slide .news-slide-content{
+	padding: 10px;
+	padding-left: 25px;
+}
+.news-section .news-slider-container .news-slide .news-slide-content h4{
+    font-size: 24px;
+    line-height: 1;
+    margin: 15px 0;
+}
+.news-section .news-slider-container .news-slide .news-slide-content > a span{
+    font-size: 11px;
+    line-height: 1;
+    letter-spacing: .6em;
+    
+
+}
+
+.news-section .news-slider-container .news-slide .news-slide-content > .read-btn {
+	margin: 10px 0;
+
+}
+/*
+========================================
+	NEWS SECTION END
+========================================
+*/
+
+
+/*
+========================================
+	DEAL SECTION START
+========================================
+*/
+
+.deal-section .deal-card{
+	padding: 50px 40px;
+}
+
+/*
+========================================
+	DEAL SECTION END
+========================================
+*/
+
+/*
+========================================
+	OFFICE SECTION START
+========================================
+*/
+
+.office-section{
+	margin: 70px 0;
+}
+
+.office-section .office-content{
+	position: relative;
+}
+
+.office-section .office-content .office-text{
+
+	bottom: 0;
+
+}
+.office-content .office-text > h3{
+    font-size: 30px;
+    line-height: 1;
+    margin: 10px 0;
+
+}
+.office-content .office-text .office-location h4{
+    font-size: 24px;
+    line-height: 1;
+    margin: 5px 0;
+}
+
+.office-content .office-text .office-location a{
+	font-size: 14px;
+	margin: 6px 0;
+}
+
+/*
+========================================
+	OFFICE SECTION END
+========================================
+*/
+
+/*
+========================================
+	CONTACT SECTION START
+========================================
+*/
+.contact-section{
+	padding: 50px 50px;
+}
+
+.contact-section .contact-form{
+	margin-bottom: 40px;
+}
+
+/*
+========================================
+	CONTACT SECTION END
+========================================
+*/
+
+/*
+========================================
+	FOOTER SECTION START
+========================================
+*/
+.footer-section{
+	margin-top: 100px;
+	background: url("../img/footer-bg.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.footer-section .footer-content{
+	padding: 100px 50px;
+}
+
+
+
+/*
+========================================
+	FOOTER SECTION END
+========================================
+*/
+
+
+}
+
+@media screen and (max-width: 991px){
+#sidebar{
+	display: none;
+}
+/*
+=======================================
+	MOBILE MENU SECTION START
+=======================================
+*/
+.mobile-menu{
+	padding: 5px 20px;
+}
+.mobile-menu .navbar-brand img{
+	width: 180px;
+}
+.mobile-menu #mynav{
+	padding: 20px 50px;
+}
+.mobile-menu #mynav ul > li{
+	list-style: none;
+	position: relative;
+	margin: 7px 0;
+	overflow: hidden;
+
+}
+.mobile-menu #mynav ul > li > a{
+	display: flex;
+	justify-content: space-between;
+	font-size: 13px;
+	color: #14203b;
+	padding-right: 10px;
+	position: relative;
+}
+.mobile-menu #mynav ul > li > a i{
+	font-size: 18px;
+}
+.mobile-menu #mynav ul > li.active > a,
+.mobile-menu #mynav ul > li:hover > a{
+	padding-left: 40px;
+	position: relative;
+}
+
+.mobile-menu #mynav ul > li.active > a:before,
+.mobile-menu #mynav ul > li:hover > a:before{
+	content: "";
+	position: absolute;
+	left: -5px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 1px;
+	background: #14203b;
+}
+
+.mobile-menu #mynav ul > li .dropdown-menu{
+	border: none;
+}
+
+.mobile-menu #mynav ul > li .dropdown-menu ul li.active > a:before,
+.mobile-menu #mynav ul > li .dropdown-menu ul li:hover > a:before{
+	background: #b29063;
+}
+.mobile-menu #mynav ul > li .dropdown-menu ul li a{
+	color: #b29063;
+}
+
+
+/*
+=======================================
+	MOBILE MENU SECTION END
+=======================================
+*/
+
+
+
+/*
+========================================
+	HERO SECTION START
+========================================
+*/
+
+
+.hero-section .hero-slide-arrow.swiper-button-prev{
+	left: 83%;
+	padding-right: 10px;
+}
+
+
+/*
+========================================
+	HERO SECTION START
+========================================
+*/
+.hero-section{
+	margin-bottom: 00px;
+}
+.hero-section .hero-slide{
+	position: relative;
+}
+.hero-section .hero-slide > img{
+	height: 400px;
+}
+
+
+.hero-section .hero-slide .hero-slide-text h6{
+	font-size: 13px;
+}
+.hero-section .hero-slide .hero-slide-text h1{
+	font-size: 38px;
+	
+}
+
+.hero-section .hero-slide .hero-slide-text a{
+	font-size: 13px;
+	border: 1px solid #fff;
+	padding: 13px 60px;
+}
+.hero-section .hero-slide-arrow{
+	right: 5%;
+	top: 330px;
+}
+
+/*
+========================================
+	HERO SECTION END
+========================================
+*/
+
+
+/*
+========================================
+	HERO SECTION END
+========================================
+*/
+
+
+/*
+========================================
+	STRATEGY SECTION START
+========================================
+*/
+.strategy-section .ceo-content{
+	width: 100%;
+	padding: 100px 60px;
+	position: relative;
+}
+.strategy-section .ceo-content:before{
+	left: 30px;
+
+
+}
+
+.strategy-section .ceo-content .ceo-text h2{
+    font-size: 32px;
+    margin: 15px 0;
+}
+.strategy-section .ceo-content .ceo-text h5{
+    font-size: 11px;
+    margin: 15px 0;
+
+    margin-top: 30px;
+}
+
+
+/*
+========================================
+	STRATEGY SECTION END
+========================================
+*/
+
+/*
+========================================
+	NEWS SECTION START
+========================================
+*/
+.news-section{
+	padding-left: 50px;
+	margin: 100px 0;
+}
+.news-section .news-heading{
+	padding-right: 20px
+}
+
+.news-section .news-heading h2{
+    font-size: 32px;
+    margin: 15px 0;
+
+}
+/*
+========================================
+	NEWS SECTION END
+========================================
+*/
+/*
+========================================
+	QUOTATION SECTION START
+========================================
+*/
+.quotation{
+	margin: 70px 0;
+}
+.quotation .owl-carousel .owl-prev {
+    left: 0px;
+    position: absolute;
+    top: 20%;
+    border-right: 1px solid #7777;
+	line-height: 0px !important;
+	background: lime !important;
+	padding: 0 !important;
+	padding-right: 10px !important;
+}
+.quotation .owl-carousel .owl-next {
+  right: 0px;
+  position: absolute;
+  top: 20%;
+  border-left: 1px solid #7777;
+  line-height: 0px !important;
+  background: lime !important;
+  padding: 0 !important;
+  padding-left: 10px !important;
+
+
+}
+
+
+.quotation .owl-carousel .owl-next,
+.quotation .owl-carousel .owl-prev{
+	color: #666 !important;
+	background: transparent !important;
+	border-radius: 0 !important;
+	font-size: 60px !important;
+}
+.quotation .quote-icon i{
+	color: #b29063;
+	font-size: 70px;
+	display: inline-block;
+	margin: 40px 20px;
+}
+.quotation .quote-text{
+	width: 80%;
+	margin: 20px auto;
+}
+.quotation .quote-text h3{
+	font-weight: 400;
+    font-size: 26px;
+    line-height: 1.294em;
+    font-family: Marcellus,serif;
+    color: #333;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.quotation .quote-text h5{
+	font-weight: 500;
+    font-size: 11px;
+    line-height: 1.6em;
+    letter-spacing: .6em;
+    text-transform: uppercase;
+    font-family: Montserrat,sans-serif;
+    color: #b29063;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.quotation .quote-text h5 span{
+	margin: 0 10px;
+}
+/*
+========================================
+	QUOTATION SECTION END
+========================================
+*/
+
+
+/*
+========================================
+	DEAL SECTION START
+========================================
+*/
+.deal-section .deal-section-title{
+	margin: 50px 0;
+	padding-right: 20px;
+}
+.contact-section-title h6,
+.deal-section .deal-section-title h6{
+    font-size: 10px;
+    margin: 15px 0;
+}
+.contact-section-title h2,
+.deal-section .deal-section-title h2{
+    font-size: 32px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+/*
+========================================
+	DEAL SECTION END
+========================================
+*/
+
+/*FOOTER SECITON*/
+.footer-section .footer-bottom{
+	padding: 20px 50px;
+	border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+
+}
+
+@media screen and (max-width: 575px){
+
+/*
+=======================================
+	MOBILE MENU SECTION START
+=======================================
+*/
+.mobile-menu{
+	padding: 5px 10px;
+}
+.mobile-menu .navbar-brand img{
+	width: 150px;
+}
+.mobile-menu #mynav{
+	padding: 20px 20px;
+}
+
+
+/*
+=======================================
+	MOBILE MENU SECTION START
+=======================================
+*/
+
+
+/*
+========================================
+	HERO SECTION START
+========================================
+*/
+
+
+.hero-section .hero-slide .hero-slide-text{
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	padding: 10px;
+}
+.hero-section .hero-slide > img{
+	height: 300px;
+}
+.hero-section .hero-slide .hero-slide-text h6{
+	font-size: 12px;
+	margin: 5px 0;
+}
+.hero-section .hero-slide .hero-slide-text h1{
+	font-size: 32px;
+	margin: 10px 0;
+
+}
+
+.hero-section .hero-slide .hero-slide-text a{
+	display: inline-block;
+	font-size: 12px;
+	padding: 12px 40px;
+}
+.hero-section .hero-slide-arrow{
+	position: absolute;
+	right: 5%;
+	top: 260px;
+	font-size: 13px;
+	padding: 0 10px;
+}
+
+.hero-section .hero-slide-arrow.swiper-button-prev{
+	left: 74%;
+	padding-right: 15px;
+}
+
+/*
+========================================
+	HERO SECTION END
+========================================
+*/
+
+/*
+========================================
+	STRATEGY SECTION START
+========================================
+*/
+.strategy-section .ceo-content{
+	padding: 80px 10px;
+	padding-left: 40px;
+}
+
+.strategy-section .ceo-content .ceo-text h2{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    
+}
+
+.strategy-section .ceo-content .ceo-text h5{
+    line-height: 1;
+}
+
+
+/*
+========================================
+	STRATEGY SECTION END
+========================================
+*/
+
+/*
+========================================
+	NEWS SECTION START
+========================================
+*/
+.news-section{
+	padding-left: 20px;
+	margin: 80px 0;
+}
+.news-section .news-heading{
+	padding-right: 15px
+}
+
+.news-section .news-heading h2{
+    font-size: 24px;
+    line-height: 1.2;
+}
+.news-section .news-slider-container{
+	margin: 40px 0;
+	padding-left: 0px;
+	overflow: hidden;
+}
+/*
+========================================
+	NEWS SECTION END
+========================================
+*/
+
+/*
+========================================
+	VIDEO SECTION START
+========================================
+*/
+
+.video-section .video-thumb .play-btn{
+	width: 100px;
+	height: 100px;
+}
+
+.video-content .video-text-container{
+
+	padding: 20px 30px;
+}
+.video-content .video-text-container h4{
+    font-size: 24px;
+}
+/*
+========================================
+	VIDEO SECTION END
+========================================
+*/
+
+/*
+========================================
+	QUOTATION SECTION START
+========================================
+*/
+.quotation{
+	margin: 30px 0;
+}
+
+
+
+.quotation .owl-carousel .owl-next,
+.quotation .owl-carousel .owl-prev{
+	color: #666 !important;
+	background: transparent !important;
+	border-radius: 0 !important;
+	font-size: 60px !important;
+}
+.quotation .quote-icon i{
+	color: #b29063;
+	font-size: 40px;
+	display: inline-block;
+	margin: 20px 20px;
+}
+.quotation .quote-text{
+	width: 100%;
+	margin: 20px auto;
+}
+.quotation .quote-text h3{
+	font-weight: 400;
+    font-size: 18px;
+    line-height: 1.294em;
+    font-family: Marcellus,serif;
+    color: #333;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.quotation .quote-text h5{
+	font-weight: 500;
+    font-size: 11px;
+    line-height: 1.6em;
+    letter-spacing: .6em;
+    text-transform: uppercase;
+    font-family: Montserrat,sans-serif;
+    color: #b29063;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.quotation .quote-text h5 span{
+	margin: 0 10px;
+}
+/*
+========================================
+	QUOTATION SECTION END
+========================================
+*/
+
+/*
+========================================
+	DEAL SECTION START
+========================================
+*/
+.deal-section .deal-section-title{
+	margin: 40px 0;
+	padding-right: 15px;
+}
+.contact-section-title h2,
+.deal-section .deal-section-title h2{
+    font-size: 22px;
+}
+.deal-section .deal-card{
+	padding: 30px 40px;
+	margin: 15px 0;
+
+}
+.deal-section .deal-card:after{
+	left: 25px;
+}
+
+
+
+.deal-section .deal-card .deal-content h3{
+    font-size: 24px;
+}
+
+.deal-section .deal-card .deal-content .deal-list{
+	margin: 40px 0;
+}
+
+.deal-section .deal-card .deal-content .deal-list p {
+	margin: 14px 0;
+}
+.deal-section .deal-card .deal-content .deal-card-btn a{
+	font-size: 13px; 
+}
+.deal-section .deal-card .deal-content .deal-card-btn a i{
+	font-size: 20px;
+}
+/*
+========================================
+	DEAL SECTION END
+========================================
+*/
+
+/*
+========================================
+	OFFICE SECTION START
+========================================
+*/
+
+.office-section{
+	margin: 40px 0;
+}
+
+
+
+.office-content >img{
+	height: 350px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.office-content .office-text > h3{
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 10px 0;
+
+}
+.office-content .office-text .office-location h4{
+    font-size: 18px;
+    line-height: 1;
+    margin: 8px 0;
+
+}
+
+.office-content .office-text .office-location a{
+	font-size: 14px;
+	margin: 5px 0;
+}
+
+/*
+========================================
+	OFFICE SECTION END
+========================================
+*/
+/*
+========================================
+	CONTACT SECTION START
+========================================
+*/
+.contact-section{
+	padding: 30px 15px;
+}
+
+.contact-section .contact-form{
+	margin-top: 30px;
+}
+
+.contact-section .contact-form .form-group select,
+.contact-section .contact-form .form-group input,
+.contact-section .contact-form .form-group textarea{
+	border: none;
+	border-bottom: 1px solid #8888;
+	border-radius: 0;
+	font-size: 14px;
+	color: #666;
+	padding: 3px;
+	margin: 15px 0;
+
+}
+
+.contact-section .contact-form .form-group.chkbox{
+	display: flex;
+	align-items: center;
+}
+.contact-section .contact-form .form-group.chkbox label{
+	font-size: 15px;
+	margin: 0;
+	margin-left: 8px;
+	color: #777;
+}
+.contact-section .contact-form .contact-btn  input{
+    font-family: Montserrat,sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px 55px;
+    cursor: pointer;
+    color: #14203b;
+    background-color: #d4bfa3;
+    border: 1px solid #d4bfa3;
+}
+.contact-section .contact-form .contact-btn  input:hover{
+	background: transparent;
+}
+/*
+========================================
+	CONTACT SECTION END
+========================================
+*/
+
+
+
+
+
+}
